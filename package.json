@@ -1,0 +1,59 @@
+{
+	"name": "pmdoc",
+	"version": "0.0.4",
+	"description": "cli's tool for writing postman scripts in js comments",
+	"keywords": [
+		"documentation",
+		"javascript",
+		"postman",
+		"jsdoc",
+		"jsdoc3",
+		"newman"
+	],
+	"dependencies": {
+		"@babel/parser": "~7.2.3",
+		"bluebird": "~3.5.0",
+		"catharsis": "~0.8.9",
+		"commander": "2.20.0",
+		"deepmerge": "3.2.0",
+		"escape-string-regexp": "~1.0.5",
+		"js2xmlparser": "~3.0.0",
+		"klaw": "~3.0.0",
+		"markdown-it": "~8.4.2",
+		"markdown-it-anchor": "~5.0.2",
+		"marked": "~0.6.0",
+		"mkdirp": "~0.5.1",
+		"newman": "4.4.1",
+		"requizzle": "~0.2.1",
+		"shelljs": "0.8.3",
+		"strip-json-comments": "~2.0.1",
+		"taffydb": "2.6.2",
+		"underscore": "~1.9.1",
+		"uuid": "3.3.2"
+	},
+	"devDependencies": {
+		"ajv": "~6.7.0",
+		"chalk": "2.4.2",
+		"gulp": "~4.0.0",
+		"gulp-eslint": "~5.0.0",
+		"gulp-json-editor": "~2.5.0",
+		"jsdoc": "3.5.5",
+		"nyc": "~13.1.0",
+		"url": "0.11.0"
+	},
+	"engines": {
+		"node": ">=8.15.0"
+	},
+	"bin": {
+		"pmdoc": "./pm.js"
+	},
+	"main": "./pm.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jiereal/pmdoc.git"
+	},
+	"author": {
+		"name": "jiereal",
+		"email": "jiereal@gmail.com"
+	}
+}
