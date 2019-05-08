@@ -1,6 +1,6 @@
 {
 	"name": "pmdoc",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "cli's tool for writing postman scripts in js comments",
 	"keywords": [
 		"documentation",
