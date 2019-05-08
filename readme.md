@@ -12,5 +12,5 @@
 	
 ### tags
 
-* [pmDefine](docs/pmDefine.md)
-* [pmClone](docs/pmClone.md)
+* [pmDefine](./docs/pmDefine.md)
+* [pmClone](./docs/pmClone.md)
