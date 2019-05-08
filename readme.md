@@ -1,4 +1,5 @@
-## jsdoc-plugin-newman
+## pmdoc
+
    根据jsdoc源码改编而来的插件，可以js代码注释之中编写`postman-collection`脚本
    
 ### install
