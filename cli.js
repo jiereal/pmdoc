@@ -44,13 +44,14 @@ commander
 		return ret;
 	})
 	.option('-f, --files <items>', 'the files you want to parse', list)
-	.option('-o, --out', 'out dir')
+	.option('-o, --out [out]', 'out dir')
 	.parse(process.argv);
 
 const outDir = commander.out || process.cwd();
 const files = commander.files || ['.'];
 const plugin = commander.plugin || [];
 
+console.log(process.execPath)
 new Jsdoc({
 	sourceFiles: files,
 	plugins: plugin.concat(['postman']),
@@ -61,8 +62,8 @@ new Jsdoc({
 					const name = collection.info.name;
 					logger.info('write json file:', path.join(outDir, `${name}.json`));
 					fs.writeFileSync(path.join(outDir, `${name}.json`), dumper.dump(collection));
-					console.log(`./node_modules/.bin/newman run ${name}.json`);
-					shelljs.exec(`./node_modules/.bin/newman run ${name}.json`);
+					console.log(`./newman run ${name}.json`);
+					shelljs.exec(`${path.resolve(__dirname, '../.bin/newman')} run ${name}.json`);
 				});
 			}
 		}

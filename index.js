@@ -40,7 +40,6 @@ module.exports = class JsDoc {
 		}
 		this.options = options;
 		this.parser = this.createParser();
-		this.installConverters();
 
 		global.debug = options.debug;
 		global.pwd = pwd;
@@ -125,6 +124,7 @@ module.exports = class JsDoc {
 
 		// source files named `package.json` or `README.md` get special treatment, unless the user
 		// explicitly specified a package and/or README file
+
 		for (let i = 0, l = sourceFiles.length; i < l; i++) {
 			sourceFile = sourceFiles[i];
 
@@ -141,7 +141,6 @@ module.exports = class JsDoc {
 
 		this.packageJson = packageJson;
 		options.readme = readmeHtml;
-
 		return sourceFiles.map((f) => resolve(f, this.resolvePaths));
 	}
 
