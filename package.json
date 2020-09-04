@@ -21,7 +21,7 @@
 		"klaw": "~3.0.0",
 		"markdown-it": "~8.4.2",
 		"markdown-it-anchor": "~5.0.2",
-		"marked": "~0.6.0",
+		"marked": "~1.1.1",
 		"mkdirp": "~0.5.1",
 		"newman": "4.4.1",
 		"requizzle": "~0.2.1",
